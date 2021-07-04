@@ -1,0 +1,71 @@
+
+.main {
+	position: relative;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+
+
+/**
+* Footer Style
+*/
+
+
+svg{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50% , -50%);
+}
+
+footer {
+	z-index: 99;
+	width: 100%;
+	background-color: black;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	ul > li {
+		position: relative;
+		border : 1px solid white;
+		border-radius: 50%;
+		padding: 10px;
+		width: 30px;
+		height: 30px;
+	}
+	
+	ul > li:hover{
+		background-color: white;
+		--svgcolor :black;
+		transition: background-color 500ms linear;
+	}
+	
+	path{
+		transition: background-color 500ms linear;
+	}
+	.footer-container {
+		display: flex;
+		padding: 10px 20px 10px 20px;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+	a:hover {
+		box-shadow: 0 2px 4px rgba(255, 255, 255, 0.3);
+	}
+	
+	.club-name {
+		font-size: 20px;
+		color: white;
+		font-family: fantasy;
+	}
+}
+
+  

@@ -1,0 +1,47 @@
+.main-wrapper {
+
+	margin: auto;
+	margin-top: 40px;
+	height: 80vh;
+
+	h1 {
+		text-align: center;
+		position: relative;
+		font-size: 6vw;
+	}
+
+	ul {
+		list-style-type: disc;
+
+		li {
+			padding: 10px;
+			font-size: 20px;
+		}
+	}
+
+	.box {
+		margin: auto;
+		margin-top: 100px;
+		width: 70%;
+		padding: 20px;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+		background-color: white;
+	}
+
+	h2 {
+		padding-left: 5%;
+		font-weight: bold;
+		font-size: 30px;
+	}
+
+	h1:after {
+		content: "";
+		position: absolute;
+		top: calc(100% + 30px);
+		left: 50%;
+		width: 40%;
+		height: 2px;
+		background-color: black;
+		transform: translateX(-50%);
+	}
+}

@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireModule } from "@angular/fire";
+import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
+import { environment } from "../environments/environment";
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +29,9 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

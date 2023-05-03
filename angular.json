@@ -138,6 +138,6 @@
   },
   "defaultProject": "honfleurDanse",
   "cli": {
-    "analytics": "dd4f8daa-d906-43c2-af4c-808bab1e8a5b"
+    "analytics": false
   }
 }

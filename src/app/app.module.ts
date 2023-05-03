@@ -2,7 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from "@angular/fire/analytics";
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from "../environments/environment";
+import { PERSISTENCE } from '@angular/fire/compat/auth';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,13 +32,16 @@ import { ZeroPipe } from './pipes/zero-pipe'
   ],
   imports: [
     BrowserModule,
+    AngularFireAuthModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideAnalytics(() => getAnalytics())
   ],
   providers: [
-
+    { provide: PERSISTENCE, useValue: 'session' },
+    ScreenTrackingService
   ],
   bootstrap: [AppComponent]
 })

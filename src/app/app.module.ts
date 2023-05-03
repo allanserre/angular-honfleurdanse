@@ -1,8 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularFireModule } from "@angular/fire";
-import { AngularFireAnalyticsModule } from "@angular/fire/analytics";
+import { provideAnalytics, getAnalytics, ScreenTrackingService, UserTrackingService } from "@angular/fire/analytics";
 import { environment } from "../environments/environment";
 
 import { AppComponent } from './app.component';
@@ -14,9 +13,12 @@ import { TarifsComponent } from './tarifs/tarifs.component';
 import { AgendaComponent } from './agenda/agenda.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { initializeApp, provideFirebaseApp, getApp } from '@angular/fire/app';
+import { ZeroPipe } from './pipes/zero-pipe'
 
 @NgModule({
   declarations: [
+    ZeroPipe,
     AppComponent,
     ContactComponent,
     HorairesComponent,
@@ -30,10 +32,12 @@ import { HeaderComponent } from './header/header.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireAnalyticsModule
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics())
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

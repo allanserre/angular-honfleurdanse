@@ -1,20 +1,83 @@
 <div class="main-wrapper">
-	<div class="underline">
-	  <h1>Tarifs 2020 - 2021</h1>
-	</div>
-	<div class="box">
-	  <ul>
-		<li>
-		  225€/an payable en 1 ou 3 fois. (200€ les cours + 20€ le
-		  costume et 5€ l'adhésion)
-		</li>
-		<li>
-		  Plus de 1 cours hebdomadaire : 325€/an.
-		</li>
-		<li>Reduction de 20% à partir du deuxième inscrit d'un même foyer familiale.</li>
-		<li> ​
-  
-		  Tarif Atelier : 35€</li>
-	  </ul>
-	</div>
+  <div class="underline">
+    <h1>Tarifs {{ tarifs.periode }}</h1>
   </div>
+  <div>
+    {{ tarifs.description }}
+  </div>
+</div>
+<div class="table-container">
+  <table>
+    <tbody>
+      <tr>
+        <th></th>
+        <th>Cours 1</th>
+        <th>Cours 2</th>
+        <th>Total</th>
+        <th>Cours 3</th>
+        <th>Total</th>
+        <th>
+          Trésor <br />
+          public
+        </th>
+      </tr>
+      <tr *ngIf="tarifs.eleves[0] as eleve">
+        <td>Elève 1</td>
+        <td>{{ eleve.cours1 | zero }}</td>
+        <td>{{ eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours1 + eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours3 | zero }}</td>
+        <td>
+          {{ eleve.cours1 + eleve.cours2 + eleve.cours3 | zero }}
+        </td>
+        <td>{{ eleve.tresor | zero }}</td>
+      </tr>
+      <tr *ngIf="tarifs.eleves[1] as eleve">
+        <td>Elève 2</td>
+        <td>{{ eleve.cours1 | zero }}</td>
+        <td>{{ eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours1 + eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours3 | zero }}</td>
+        <td>
+          {{ eleve.cours1 + eleve.cours2 + eleve.cours3 | zero }}
+        </td>
+        <td>{{ eleve.tresor | zero }}</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>{{ tarifs.eleves[0].cours1 + tarifs.eleves[1].cours1 }}</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr *ngIf="tarifs.eleves[2] as eleve">
+        <td>Elève 3</td>
+        <td>{{ eleve.cours1 | zero }}</td>
+        <td>{{ eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours1 + eleve.cours2 | zero }}</td>
+        <td>{{ eleve.cours3 | zero }}</td>
+        <td>
+          {{ eleve.cours1 + eleve.cours2 + eleve.cours3 | zero }}
+        </td>
+        <td>{{ eleve.tresor | zero }}</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>
+          {{
+            tarifs.eleves[0].cours1 +
+              tarifs.eleves[1].cours1 +
+              tarifs.eleves[2].cours1
+          }}
+        </td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

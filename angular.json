@@ -33,6 +33,15 @@
             "scripts": []
           },
           "configurations": {
+            "defaultConfiguration": "development",
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            },
             "production": {
               "fileReplacements": [
                 {
@@ -68,6 +77,9 @@
             "browserTarget": "honfleurDanse:build"
           },
           "configurations": {
+            "development" : {
+              "browserTarget": "honfleurDanse:build:development"
+            },
             "production": {
               "browserTarget": "honfleurDanse:build:production"
             }
@@ -124,5 +136,8 @@
       }
     }
   },
-  "defaultProject": "honfleurDanse"
+  "defaultProject": "honfleurDanse",
+  "cli": {
+    "analytics": "dd4f8daa-d906-43c2-af4c-808bab1e8a5b"
+  }
 }

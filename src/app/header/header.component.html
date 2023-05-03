@@ -1,87 +1,134 @@
+<div *ngIf="isOpen" class="sidenav-mobile" [@simpleFadeAnimation]="'in'">
+  <ul>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/home"
+      >
+        Qui sommmes nous ?
+      </a>
+    </li>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/horaires"
+      >
+        Horaires
+      </a>
+    </li>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/tarifs"
+      >
+        Tarifs
+      </a>
+    </li>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/agenda"
+      >
+        Agenda
+      </a>
+    </li>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/photos"
+      >
+        Photos
+      </a>
+    </li>
+    <li>
+      <a
+        class="menu-link animated-link-base"
+        routerLinkActive="underlined-link"
+        routerLink="/contact"
+      >
+        Contact
+      </a>
+    </li>
+  </ul>
+</div>
 
-<div *ngIf="isOpen" class="sidenav-mobile"  [@simpleFadeAnimation]="'in'">
-	<ul>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/home">
-		  Qui sommmes nous ?
-		</a>
-	  </li>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/horaires">
-		  Horaires
-		</a>
-	  </li>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/tarifs">
-		  Tarifs
-		</a>
-	  </li>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/agenda">
-		  Agenda
-		</a>
-	  </li>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/photos">
-		  Photos
-		</a>
-	  </li>
-	  <li>
-		<a class="menu-link animated-link-base" routerLink="/contact">
-		  Contact
-		</a>
-	  </li>
-	</ul>
-  </div>
-  
-  
-  <div class="nav-container" >
-	<nav>
-	  <div id="menu-icon" class="menu-icon" [ngClass]="{'open' : isOpen }" (click)=displayMenu()>
-		<div class="bar-menu"></div>
-		<div class="bar-menu"></div>
-		<div class="bar-menu" ></div>
-	  </div>
-	  <ul>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/home">
-			Qui sommmes nous ?
-		  </a>
-		</li>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/horaires">
-			Horaires
-		  </a>
-		</li>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/tarifs">
-			Tarifs
-		  </a>
-		</li>
-	  </ul>
-	  <a routerLink="/home" class="header-image">
-		<img
-		  src="assets/logo-192.png"
-		  alt="logo Vie&Danse"
-		/>
-	  </a>
-	  <ul>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/agenda">
-			Agenda
-		  </a>
-		</li>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/photos">
-			Photos
-		  </a>
-		</li>
-		<li>
-		  <a class="menu-link animated-link-base" routerLink="/contact">
-			Contact
-		  </a>
-		</li>
-	  </ul>
-	</nav>
-  </div>
-  
+<div class="nav-container">
+  <nav>
+    <div
+      id="menu-icon"
+      class="menu-icon"
+      [ngClass]="{ open: isOpen }"
+      (click)="displayMenu()"
+    >
+      <div class="bar-menu"></div>
+      <div class="bar-menu"></div>
+      <div class="bar-menu"></div>
+    </div>
+    <ul>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/home"
+        >
+          Qui sommmes nous ?
+        </a>
+      </li>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/horaires"
+        >
+          Horaires
+        </a>
+      </li>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/tarifs"
+        >
+          Tarifs
+        </a>
+      </li>
+    </ul>
+    <a routerLink="/home" class="header-image">
+      <img src="assets/logo-192.png" alt="logo Vie&Danse" />
+    </a>
+    <ul>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/agenda"
+        >
+          Agenda
+        </a>
+      </li>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/photos"
+        >
+          Photos
+        </a>
+      </li>
+      <li>
+        <a
+          class="menu-link animated-link-base"
+          routerLinkActive="underlined-link"
+          routerLink="/contact"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

@@ -1,0 +1,24 @@
+{
+  "periode" : "2022  - 2023",
+  "description" : "Le tarif de base comprend 1 cours, les costumes pour les spectacles et l'adhésion à l'association",
+  "eleves" : [
+    {
+      "cours1" : 230,
+      "cours2" : 150,
+      "cours3" : 120,
+      "tresor" : 10
+    },
+    {
+      "cours1" : 180,
+      "cours2" : 120,
+      "cours3" : 0,
+      "tresor" : 0
+    },
+    {
+      "cours1" : 180,
+      "cours2" : 120,
+      "cours3" : 0,
+      "tresor" : 0
+    }
+  ]
+}

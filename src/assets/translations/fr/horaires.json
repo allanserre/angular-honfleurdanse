@@ -1,0 +1,162 @@
+{
+  "professeur": [
+    "Bénédicte Duhamel",
+    "Élora Popinel",
+    "Énora Gabard"
+  ],
+  "lieu": [
+    "Honfleur",
+    "St Gatien",
+    "St Arnoult"
+  ],
+  "cours": {
+    "lundi": [
+      {
+        "debut": "17:00",
+        "fin": "18:00",
+        "age": "6-7 ans",
+        "prof": 2,
+        "lieu": 3
+      }
+    ],
+    "mercredi": [
+      {
+        "debut": "17:30",
+        "fin": "18:30",
+        "age": "8-10 ans",
+        "prof": 2,
+        "lieu": 3
+      },
+      {
+        "debut": "18:30",
+        "fin": "19:45",
+        "age": "Adultes débutants",
+        "prof": 2,
+        "lieu": 3
+      },
+      {
+        "debut": "10:00",
+        "fin": "11:00",
+        "age": "8-9 ans",
+        "prof": 3,
+        "lieu": 1
+      },
+      {
+        "debut": "11:00",
+        "fin": "12:00",
+        "age": "4-5 ans",
+        "prof": 3,
+        "lieu": 1
+      },
+      {
+        "debut": "13:00",
+        "fin": "14:00",
+        "age": "6-7 ans",
+        "prof": 3,
+        "lieu": 1
+      },
+      {
+        "debut": "17:15",
+        "fin": "18:30",
+        "age": "10-11 ans",
+        "prof": 1,
+        "lieu": 1
+      },
+      {
+        "debut": "18:30",
+        "fin": "19:30",
+        "age": "12-14 ans",
+        "prof": 1,
+        "lieu": 1
+      },
+      {
+        "debut": "10:00",
+        "fin": "11:00",
+        "age": "4-5 ans",
+        "prof": 2,
+        "lieu": 2
+      },
+      {
+        "debut": "11:00",
+        "fin": "12:00",
+        "age": "6-7 ans",
+        "prof": 2,
+        "lieu": 2
+      },
+      {
+        "debut": "14:30",
+        "fin": "15:45",
+        "age": "Concours Contemporain",
+        "prof": 3,
+        "lieu": 2
+      },
+      {
+        "debut": "19:00",
+        "fin": "20:15",
+        "age": "Barre au sol",
+        "prof": 3,
+        "lieu": 2
+      }
+    ],
+    "jeudi": [
+      {
+        "debut": "17:15",
+        "fin": "18:15",
+        "age": "Classique",
+        "prof": 1,
+        "lieu": 2
+      },
+      {
+        "debut": "18:15",
+        "fin": "19:30",
+        "age": "Ados adultes",
+        "prof": 1,
+        "lieu": 2
+      },
+      {
+        "debut": "19:30",
+        "fin": "20:30",
+        "age": "Adultes Débutantes",
+        "prof": 1,
+        "lieu": 2
+      },
+      {
+        "debut": "17:00",
+        "fin": "18:00",
+        "age": "4-5 ans",
+        "prof": 2,
+        "lieu": 3
+      },
+      {
+        "debut": "18:00",
+        "fin": "19:00",
+        "age": "11-13 ans",
+        "prof": 2,
+        "lieu": 3
+      }
+    ],
+    "vendredi": [
+      {
+        "debut": "17:15",
+        "fin": "18:15",
+        "age": "Concours",
+        "prof": 1,
+        "lieu": 2
+      },
+      {
+        "debut": "18:15",
+        "fin": "19:30",
+        "age": "Ados 14-17 ans",
+        "prof": 1,
+        "lieu": 2
+      },
+      {
+        "debut": "19:30",
+        "fin": "20:30",
+        "age": "Adultes Intermédiaires",
+        "prof": 1,
+        "lieu": 2
+      }
+    ]
+  }
+}

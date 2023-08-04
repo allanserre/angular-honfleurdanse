@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import TarifsJson from '../../assets/tarifs.json';
+import TarifsJson from '../../assets/translations/fr/tarifs.json';
 
 interface Eleve {
   cours1: number,

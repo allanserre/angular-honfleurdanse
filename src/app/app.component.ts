@@ -1,7 +1,10 @@
+import { getAnalytics } from '@angular/fire/analytics';
 import { Component, inject } from '@angular/core';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router, RouterOutlet } from '@angular/router';
 import { simpleFadeAnimation, slideInAnimation } from './route-transition-animations';
 import { Analytics } from '@angular/fire/analytics';
+
+
 
 @Component({
   selector: 'app-root',
@@ -18,6 +21,7 @@ export class AppComponent {
   private analytics: Analytics = inject(Analytics);
 
   prepareRoute(outlet: RouterOutlet) {
+    
     return outlet && outlet.activatedRouteData && outlet.activatedRouteData.animation;
   }
 

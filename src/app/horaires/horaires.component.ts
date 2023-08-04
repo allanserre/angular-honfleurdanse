@@ -1,13 +1,24 @@
 import { Component, OnInit } from '@angular/core';
-import CoursJson from '../../assets/horaires.json';
+import HorairesJson from '../../assets/translations/fr/horaires.json';
 
-interface COURS {
-  age: string;
-  libelle: string;
-  lundi: string[];
-  mercredi: string[];
-  jeudi: string[];
-  vendredi: string[];
+interface Horaires {
+  professeur: string[];
+  lieu: string[];
+  cours: {
+    lundi: Cour[]
+    mercredi: Cour[];
+    jeudi: Cour[];
+    vendredi: Cour[];
+  }
+
+}
+
+interface Cour {
+  "debut": string,
+  "fin": string,
+  "age": string,
+  "prof": number,
+  "lieu": number
 }
 
 @Component({
@@ -17,7 +28,7 @@ interface COURS {
 })
 export class HorairesComponent implements OnInit {
 
-  cours : COURS[] = CoursJson;
+  horaires: Horaires = HorairesJson;
   constructor() { }
 
   ngOnInit(): void {

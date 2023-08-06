@@ -1,13 +1,30 @@
 .main-wrapper {
-  margin: auto;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px;
+  background-color: white;
+  padding: 30px;
   text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
 
   h1 {
+    font-family: "Benedict";
     position: relative;
     font-size: 5vw;
     margin-bottom: 30px;
+  }
+  @media (max-width: 500px) {
+    h1 {
+      font-size: 25px;
+    }
+    td,
+    th {
+      padding: 5px;
+    }
+    td {
+      font-size: 10px;
+    }
+    th {
+      font-size: 15px;
+    }
   }
 
   h1:after {
@@ -23,31 +40,29 @@
 }
 
 .table-container {
+  margin-top: 20px;
   overflow-x: auto;
   white-space: nowrap;
 }
 
 table {
-  margin-left: auto;
-  margin-right: auto;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  border-spacing: 10px 10px;
   overflow: auto;
-  border-collapse: collapse;
-  border-color: black;
-  background-color: #fff;
+  display: inline-block;
+  border-collapse: separate;
 }
 
 th,
 td {
-  font-weight: unset;
   padding: 10px;
 }
 
 td {
-  font-family: Montserrat-Regular;
-
+  font-size: 1.25rem;
   text-align: center;
   color: black;
+  background-color: #8ddbe8;
+  border-radius: 5px;
   line-height: 1.4;
 }
 
@@ -56,18 +71,19 @@ td:hover {
   color: white;
 }
 
-tr:nth-child(even) {
-  background-color: #feb8ba;
-}
-
 /* tr:hover {
     background-color: #f2f2f2;
   } */
 th {
-  font-family: Montserrat-Medium;
-  color: white;
+  font-size: 1.5rem;
+  border-radius: 5px;
+
+  &:not(:first-child) {
+    background-color: #86b499;
+  }
+
   line-height: 1.4;
   text-transform: uppercase;
-  font-size: 12px;
-  background-color: black;
+  font-weight: bold;
+  text-decoration: underline;
 }

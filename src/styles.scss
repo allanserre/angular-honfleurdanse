@@ -8,11 +8,9 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-
   margin: 0;
   overflow-y: scroll;
-  font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Cardo";
   font-size: 14px;
   line-height: 1.5;
   background-color: #eb3f48;
@@ -56,5 +54,32 @@ code {
 @font-face {
   font-family: "Bravery";
   font-style: normal;
-  src: url("./assets/bravery-font/Bravery.ttf") format("truetype");
+  src: url("./assets/font/bravery-font/Bravery.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Benedict";
+  font-style: normal;
+  src: url("./assets/font/benedict/Benedict.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cardo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/font/cardo/Cardo-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cardo";
+  font-weight: bold;
+  font-style: normal;
+  src: url("./assets/font/cardo/Cardo-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Cardo";
+  font-style: italic;
+  font-weight: normal;
+  src: url("./assets/font/cardo/Cardo-Italic.ttf") format("truetype");
 }

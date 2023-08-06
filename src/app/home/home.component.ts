@@ -12,7 +12,7 @@ interface ACCEUIL {
 export class HomeComponent implements OnInit {
 
   acceuil: ACCEUIL = AccueilJSON;
-  presentation = this.acceuil.presentation.join();
+  presentation = this.acceuil.presentation.join("");
   constructor() { }
 
   ngOnInit(): void {

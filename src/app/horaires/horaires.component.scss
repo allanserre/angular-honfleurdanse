@@ -88,6 +88,10 @@ h1 {
   > div {
     display: flex;
 
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+
     .svg-box {
       margin-right: 10px;
       display: flex;

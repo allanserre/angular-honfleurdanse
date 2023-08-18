@@ -16,7 +16,8 @@ import { AgendaComponent } from './agenda/agenda.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
 import { initializeApp, provideFirebaseApp, getApp } from '@angular/fire/app';
-import { ZeroPipe } from './pipes/zero-pipe'
+import { ZeroPipe } from './pipes/zero-pipe';
+import { FooterComponent } from './footer/footer.component'
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ZeroPipe } from './pipes/zero-pipe'
     TarifsComponent,
     AgendaComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,9 +1,26 @@
-<section class="carousel-wrapper">
-	<div class="box">
-		<div *ngFor="let image of images; let index = index;" class="carousel-item" [class.selected]="selectedImage == index">
-			<img src="../../assets/carousel/{{ image }}" alt="">
-		</div>	
-		<img (click)="next()" class="next" src="../../assets/next.svg" alt="right arrow">	
-		<img (click)="prev()" class="prev" src="../../assets/next.svg" alt="left arrow">		
-	</div>
-</section>
+<div class="main-container">
+  <section class="carousel-wrapper">
+    <div class="box">
+      <div
+        *ngFor="let image of images; let index = index"
+        class="carousel-item"
+        [class.selected]="selectedImage == index"
+      >
+        <img src="../../assets/carousel/{{ image }}" alt="" />
+      </div>
+      <img
+        (click)="next()"
+        class="next"
+        src="../../assets/next.svg"
+        alt="right arrow"
+      />
+      <img
+        (click)="prev()"
+        class="prev"
+        src="../../assets/next.svg"
+        alt="left arrow"
+      />
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>

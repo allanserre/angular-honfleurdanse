@@ -61,6 +61,9 @@ tr {
   .prof3 {
     background-color: #f5aeb3;
   }
+  .prof4 {
+    background-color: #E159BB;
+  }
 }
 
 /* tr:hover {
@@ -87,6 +90,10 @@ h1 {
 
   > div {
     display: flex;
+
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
 
     .svg-box {
       margin-right: 10px;
